@@ -125,6 +125,7 @@ function findMedia(title) {
 //
 // Write your code here:
 
+let oldMedia = media.filter(item => item.released < 1990);
 
 // =====================================================
 // STEP 6: Call your functions to test everything
@@ -139,8 +140,15 @@ function findMedia(title) {
 
 // Write your code here:
 
+console.log(listMedia);
+console.log(addMedia);
+console.log(findMedia);
 
-
+listMedia(media);
+addMedia("The Witcher", "Books and Video Games", 1993);
+listMedia(media);
+console.log(findMedia("The Witcher"));
+console.log(oldMedia);
 
 // =====================================================
 // BONUS CHALLENGES (pick at least 2)
@@ -150,12 +158,23 @@ function findMedia(title) {
 // Add a function deleteItem(name) that removes an item
 // by a unique property (like name or title). Hint: use
 // .findIndex() and .splice(), or .filter().
+media.splice(media.findIndex(item => item.title === "WarHammer 40k"), 1);
+console.log(media);
 //
 //
 // BONUS 2: Update an item
 // Add a function updateItem(name, property, newValue) that
 // finds an item and changes one of its properties.
-//
+
+function updateMedia(title, property, released) {
+   let item = media.find(item => item.title === title);
+   if (item) {
+      item[property] = released;
+   }
+}
+updateMedia("Ace Ventura", "Movie", 1994);
+console.log(media);
+
 //
 // BONUS 3: Summary / stats function
 // Write a function that analyzes the array. Like "average
