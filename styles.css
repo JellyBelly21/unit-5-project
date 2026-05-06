@@ -1,0 +1,46 @@
+/* ==========================================
+   Data Manager Styles
+   This is done for you! Don't touch this file.
+   ========================================== */
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 40px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 36px;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card h1 {
+  color: #c0256f;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.card .subtitle {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.card .info-text {
+  color: #555;
+  background: #fff5f7;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  border-left: 4px solid #f5576c;
+}
