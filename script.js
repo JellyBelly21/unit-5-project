@@ -84,8 +84,9 @@ function listMedia(list) {
 // not the example above.
 // Write your code here:
 
-
-
+function addMedia(title, platform, released) {
+media.push({ title: title, platform: platform, released: released });   
+}
 
 // =====================================================
 // STEP 4: Write a function that RETURNS data
@@ -101,8 +102,12 @@ function listMedia(list) {
 // This function MUST use the return keyword.
 // Write your code here:
 
-
-
+function findMedia(title) {
+      for (let item of media)
+      if (item.title === title) {
+         return item;
+      }
+}
 
 // =====================================================
 // STEP 5: Use .find(), .filter(), or .sort()
@@ -119,8 +124,6 @@ function listMedia(list) {
 //   let sorted = list.slice().sort((a, b) => a.year - b.year);
 //
 // Write your code here:
-
-
 
 
 // =====================================================
