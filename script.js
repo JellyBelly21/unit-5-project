@@ -39,8 +39,13 @@
 //
 // Write your code here:
 
-
-
+let media = [
+    { title: "Dungeons $ Dragons", platform: "Pencil, Paper and Dice", released: 1974 },
+    { title: "WarHammer 40k", platform: "Table Top Miniatures", released: 1983 },
+    { title: "Devil May Cry ", platform: "PlayStation 2", released: 2001 },
+    { title: "Elric of Melnibone", platform: "Novels", released: 1961 },
+ 
+];
 
 // =====================================================
 // STEP 2: Write a function to DISPLAY all items
@@ -58,8 +63,11 @@
 //
 // Write your code here:
 
-
-
+function listMedia(list) {
+      for (let item of list) {
+         console.log(`${item.title} is a ${item.platform} released in ${item.released}`);
+}
+}
 
 // =====================================================
 // STEP 3: Write a function to ADD a new item
