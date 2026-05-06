@@ -46,6 +46,7 @@ let media = [
     { title: "Elric of Melnibone", platform: "Novels", released: 1961 },
  
 ];
+console.log(media);
 
 // =====================================================
 // STEP 2: Write a function to DISPLAY all items
@@ -68,6 +69,7 @@ function listMedia(list) {
          console.log(`${item.title} is a ${item.platform} released in ${item.released}`);
 }
 }
+console.log(listMedia);
 
 // =====================================================
 // STEP 3: Write a function to ADD a new item
@@ -87,6 +89,7 @@ function listMedia(list) {
 function addMedia(title, platform, released) {
 media.push({ title: title, platform: platform, released: released });   
 }
+console.log(addMedia);
 
 // =====================================================
 // STEP 4: Write a function that RETURNS data
@@ -108,6 +111,7 @@ function findMedia(title) {
          return item;
       }
 }
+console.log(findMedia);
 
 // =====================================================
 // STEP 5: Use .find(), .filter(), or .sort()
@@ -126,6 +130,7 @@ function findMedia(title) {
 // Write your code here:
 
 let oldMedia = media.filter(item => item.released < 1990);
+console.log(oldMedia);
 
 // =====================================================
 // STEP 6: Call your functions to test everything
